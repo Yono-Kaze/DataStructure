@@ -142,7 +142,7 @@ public class MyNewGenerics<E> {
 		}
 		size--;
 		
-		if(size == data.length / 2) {reGenerics(data.length / 2);}//缩减容量，减少浪费
+		if(size == data.length / 4 && data.length / 2 != 0 ) {reGenerics(data.length / 2);}//缩减容量，减少浪费
 		
 		return e;
 	}
