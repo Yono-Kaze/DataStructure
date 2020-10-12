@@ -39,7 +39,7 @@ public class MyArray {
 		System.out.println(array.remove(2));
 		System.out.println(array);
 		
-		System.out.println("---------------------------------");
+		System.out.println("----------------------------------------------------------------");
 		Thread.sleep(TimeUnit.SECONDS.toMillis(1));
 		
 		MyNewGenerics<Integer> array1 = new MyNewGenerics<>(20);
@@ -66,6 +66,16 @@ public class MyArray {
 		System.out.println(array1);
 		System.out.println(array1.remove(2));
 		System.out.println(array1);
+		
+		System.out.println("-----------------------≤‚ ‘∂ØÃ¨∑∫–Õ-----------------------------------------");
+		MyNewGenerics<Integer> myNewGenerics = new MyNewGenerics<Integer>(5);
+		for(int i = 0; i < 5; i++) {myNewGenerics.addLast(i);}
+		System.out.println(myNewGenerics);
+		myNewGenerics.addIndex(2, 20);
+		System.out.println(myNewGenerics);
+		myNewGenerics.remove(5);
+		System.out.println(myNewGenerics);
+		
 		
 	}
 

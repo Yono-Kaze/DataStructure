@@ -77,9 +77,9 @@ public class MyNewGenerics<E> {
 	 */
 	public void addIndex(int index, E e) {
 		
-		if(size == data.length) {throw new IllegalArgumentException("add failed,array is full");}
-		
 		if(index < 0 || index > size) {throw new IllegalArgumentException("add failed, index < 0 || index > size");}
+		
+		if(size == data.length) {reGenerics(data.length * 2);}//扩容空间，存放更多的数据
 		
 		for(int i = size - 1; i > index; i--) {data[i + 1] = data[i];}
 		
@@ -87,6 +87,7 @@ public class MyNewGenerics<E> {
 		size++;
 	}
 	
+
 	/**
 	 * <p>按输入的索引得到泛型中的元素</p>
 	 * @param index
@@ -140,6 +141,9 @@ public class MyNewGenerics<E> {
 			data[i] = data[i + 1];
 		}
 		size--;
+		
+		if(size == data.length / 4 && data.length / 2 != 0 ) {reGenerics(data.length / 2);}//缩减容量，减少浪费
+		
 		return e;
 	}
 	
@@ -155,18 +159,31 @@ public class MyNewGenerics<E> {
 	 */
 	public E removeLast() {return remove(size - 1);}
 	
+	/**
+	 * <p>对数组容量进行修改</p>
+	 */
+	private void reGenerics(int newCapacity) {
+		// TODO Auto-generated method stub
+
+		E[] newData = (E[]) new Object[newCapacity];
+		
+		for(int i = 0; i < size; i++) {
+			newData[i] = data[i];
+		}
+		
+		data = newData;
+	}
+	
 	@Override
 	public String toString() {
 		
 		StringBuffer res = new StringBuffer();
-		res.append('[');
 		res.append(String.format("Generics size = %d, capacity = %d\n", size, data.length));
 		res.append('[');
 		for(int i =  0; i < size; i++) {
 			res.append(data[i]);
-			if(i != size - 1) {res.append(',' + "\n");}
+			if(i != size - 1) {res.append(',');}
 		}
-		res.append("\n" + ']');
 		res.append(']');
 		return res.toString();
 	}
