@@ -1,4 +1,4 @@
-package com.datastructure;
+package com.datastructure.array;
 
 import java.util.concurrent.TimeUnit;
 
