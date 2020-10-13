@@ -99,6 +99,22 @@ public class MyNewGenerics<E> {
 	}
 	
 	/**
+	 *<p>返回泛型数组中第一个元素</p>
+	 * @return
+	 */
+	public E getFirst() {
+		return get(0);
+	}
+	
+	/**
+	 *<p>返回泛型数组中最后个元素</p>
+	 * @return
+	 */
+	public E getLast() {
+		return get(size - 1);
+	}
+	
+	/**
 	 * <p>按输入的索引修改泛型中的元素</p>
 	 * @param index
 	 * @param e
