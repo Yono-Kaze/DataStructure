@@ -42,7 +42,7 @@ public class MyArray {
 		System.out.println("----------------------------------------------------------------");
 		Thread.sleep(TimeUnit.SECONDS.toMillis(1));
 		
-		MyNewGenerics<Integer> array1 = new MyNewGenerics<>(20);
+		MyNewGenerics<Integer> array1 = new MyNewGenerics<Integer>(20);
 
 		for(int i = 0; i < 5; i++) {
 			array1.addLast(i);
