@@ -7,6 +7,6 @@ package com.datastructure.linkedlist;
  * @version 2020-10-17
  *
  */
-public class MyLinkedList {
+public class LinkedListTest {
 
 }
