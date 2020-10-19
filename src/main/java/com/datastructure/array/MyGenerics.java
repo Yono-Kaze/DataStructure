@@ -2,18 +2,18 @@ package com.datastructure.array;
 
 /**
  * 
- *<p>Title:Êý¾Ý½á¹¹-·ºÐÍ²¿·Ö<p>	
- *<p>Description:·ºÐÍ²¿·ÖÏà¹Ø²âÊÔ<p>	
+ *<p>Title:ï¿½ï¿½ï¿½Ý½á¹¹-ï¿½ï¿½ï¿½Í²ï¿½ï¿½ï¿½<p>	
+ *<p>Description:ï¿½ï¿½ï¿½Í²ï¿½ï¿½ï¿½ï¿½ï¿½Ø²ï¿½ï¿½ï¿½<p>	
  * @author Administrator
  * @version 2020-10-11
  *
  */
-public class Mygenerics {
+public class MyGenerics {
 	
 	/**
 	 * 
-	 *<p>Title:Ñ§ÉúÀà<p>	
-	 *<p>Description:»ù±¾ÊôÐÔÓÐid£¬name£¬ismale<p>	
+	 *<p>Title:Ñ§ï¿½ï¿½ï¿½ï¿½<p>	
+	 *<p>Description:ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½idï¿½ï¿½nameï¿½ï¿½ismale<p>	
 	 * @author Administrator
 	 * @version 2020-10-11
 	 *

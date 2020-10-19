@@ -4,8 +4,8 @@ import java.util.concurrent.TimeUnit;
 
 /**
  * 
- *<p>Title:Êı¾İ½á¹¹-Êı×é²¿·Ö<p>	
- *<p>Description:Êı×é²¿·ÖÏà¹Ø²âÊÔ<p>	
+ *<p>Title:æ•°æ®ç»“æ„-æ•°ç»„éƒ¨åˆ†<p>	
+ *<p>Description:æ•°ç»„éƒ¨åˆ†ç›¸å…³æµ‹è¯•<p>	
  * @author Administrator
  * @version 2020-10-11
  *
@@ -67,7 +67,7 @@ public class MyArray {
 		System.out.println(array1.remove(2));
 		System.out.println(array1);
 		
-		System.out.println("-----------------------²âÊÔ¶¯Ì¬·ºĞÍ-----------------------------------------");
+		System.out.println("-----------------------æµ‹è¯•åŠ¨æ€æ³›å‹---------------------------------------");
 		MyNewGenerics<Integer> myNewGenerics = new MyNewGenerics<Integer>(5);
 		for(int i = 0; i < 5; i++) {myNewGenerics.addLast(i);}
 		System.out.println(myNewGenerics);
