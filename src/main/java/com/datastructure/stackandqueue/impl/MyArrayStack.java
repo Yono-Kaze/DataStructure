@@ -5,8 +5,8 @@ import com.datastructure.stackandqueue.InterfaceStack;
 
 /**
  * 
- *<p>Title:×Ô¶¨ÒåÕ»<p>	
- *<p>Description:ÒÔ¶¯Ì¬·ºĞÍÊı×éÎª»ù´¡¶¨Òå¶¯Ì¬·ºĞÍÕ»<p>	
+ *<p>Title:è‡ªå®šä¹‰æ ˆ<p>	
+ *<p>Description:ä»¥åŠ¨æ€æ³›å‹æ•°ç»„ä¸ºåŸºç¡€å®šä¹‰åŠ¨æ€æ³›å‹æ ˆ<p>	
  * @author Administrator
  * @version 2020-10-13
  *
@@ -16,14 +16,14 @@ public class MyArrayStack<E> implements InterfaceStack<E> {
 	private MyNewGenerics<E> stack;
 	
 	/**
-	 * <p>ÉèÖÃÄ¬ÈÏÕ»´óĞ¡Îª10<p>
+	 * <p>è®¾ç½®é»˜è®¤æ ˆå¤§å°ä¸º10<p>
 	 */
 	public MyArrayStack() {
 		this(10);
 	}
 	
 	/**
-	 * <p>¸ù¾İÓÃ»§ÊäÈë´óĞ¡´´½¨Õ»<p>
+	 * <p>æ ¹æ®ç”¨æˆ·è¾“å…¥å¤§å°åˆ›å»ºæ ˆ<p>
 	 * @param capacity
 	 */
 	public MyArrayStack(int capacity) {
@@ -31,7 +31,7 @@ public class MyArrayStack<E> implements InterfaceStack<E> {
 	}
 	
 	/**
-	 * <p>·µ»ØÕ»µÄ×ÜÈİÁ¿<p>
+	 * <p>è¿”å›æ ˆçš„æ€»å®¹é‡<p>
 	 * @return
 	 */
 	public int getCapacity() {
@@ -39,7 +39,7 @@ public class MyArrayStack<E> implements InterfaceStack<E> {
 	}
 	
 	/**
-	 * <p>ÈëÕ»²Ù×÷<p>
+	 * <p>å…¥æ ˆæ“ä½œ<p>
 	 * @param e
 	 */
 	@Override
@@ -49,7 +49,7 @@ public class MyArrayStack<E> implements InterfaceStack<E> {
 	}
 
 	/**
-	 * <p>³öÕ»²Ù×÷£¬²¢·µ»Ø³öÕ»ÔªËØ<p>
+	 * <p>å‡ºæ ˆæ“ä½œï¼Œå¹¶è¿”å›å‡ºæ ˆå…ƒç´ <p>
 	 * @return 
 	 */
 	@Override
@@ -59,7 +59,7 @@ public class MyArrayStack<E> implements InterfaceStack<E> {
 	}
 
 	/**
-	 * <p>²é¿´Õ»¶¥ÔªËØ<p>
+	 * <p>æŸ¥çœ‹æ ˆé¡¶å…ƒç´ <p>
 	 */
 	@Override
 	public E peek() {
@@ -68,7 +68,7 @@ public class MyArrayStack<E> implements InterfaceStack<E> {
 	}
 
 	/**
-	 * <p>ÅĞ¶ÏÕ»ÊÇ·ñÎª¿Õ£¬ÈôÎª¿Õ·µ»Øtrue£¬·ñÔò·µ»Øfalse<p>
+	 * <p>åˆ¤æ–­æ ˆæ˜¯å¦ä¸ºç©ºï¼Œè‹¥ä¸ºç©ºè¿”å›trueï¼Œå¦åˆ™è¿”å›false<p>
 	 * @return
 	 */
 	@Override
@@ -78,7 +78,7 @@ public class MyArrayStack<E> implements InterfaceStack<E> {
 	}
 
 	/**
-	 * <p>·µ»ØÕ»µÄÔªËØÊıÁ¿<p>
+	 * <p>è¿”å›æ ˆçš„å…ƒç´ æ•°é‡<p>
 	 * @return
 	 */
 	@Override

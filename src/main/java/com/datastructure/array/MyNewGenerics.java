@@ -2,19 +2,19 @@ package com.datastructure.array;
 
 /**
  * 
- *<p>Title:×Ô¶¨Òå·ºĞÍ<p>	
- *<p>Description:½«×Ô¶¨ÒåÊı×éÍ¨¹ı·ºĞÍÀ´Ö§³ÖËùÓĞÀàĞÍÊı¾İ<p>	
+ *<p>Title:è‡ªå®šä¹‰æ³›å‹<p>	
+ *<p>Description:å°†è‡ªå®šä¹‰æ•°ç»„é€šè¿‡æ³›å‹æ¥æ”¯æŒæ‰€æœ‰ç±»å‹æ•°æ®<p>	
  * @author Administrator
  * @version 2020-10-11
  *
  */
 public class MyNewGenerics<E> {
 	private E[] data;
-	private int size;//·ºĞÍÖĞµ±Ç°ÔªËØÊıÁ¿
+	private int size;//æ³›å‹ä¸­å½“å‰å…ƒç´ æ•°é‡
 	
 	/**
 	 * 
-	 * <p>Description:ÉèÖÃÒ»¸öÄ¬ÈÏµÄ·ºĞÍ´óĞ¡10<p>
+	 * <p>Description:è®¾ç½®ä¸€ä¸ªé»˜è®¤çš„æ³›å‹å¤§å°10<p>
 	 */
 	public MyNewGenerics() {
 		this(10);
@@ -22,7 +22,7 @@ public class MyNewGenerics<E> {
 	
 	/**
 	 * 
-	 * <p>Description:ÓÃ»§ÊäÈëµÄ·ºĞÍ´óĞ¡capacity<p>
+	 * <p>Description:ç”¨æˆ·è¾“å…¥çš„æ³›å‹å¤§å°capacity<p>
 	 * @param capacity
 	 */
 	public MyNewGenerics(int capacity) {
@@ -31,7 +31,7 @@ public class MyNewGenerics<E> {
 	}
 	
 	/**
-	 * <p>Description:·µ»Ø·ºĞÍÖĞµ±Ç°ÔªËØ¸öÊı<p>
+	 * <p>Description:è¿”å›æ³›å‹ä¸­å½“å‰å…ƒç´ ä¸ªæ•°<p>
 	 * @return size
 	 */
 	public int getSize() {
@@ -39,7 +39,7 @@ public class MyNewGenerics<E> {
 	}
 	
 	/**
-	 * <p>Description:·µ»Ø·ºĞÍµÄÈİÁ¿<p>
+	 * <p>Description:è¿”å›æ³›å‹çš„å®¹é‡<p>
 	 * @return data.length
 	 */
 	public int getCapacity() {
@@ -47,7 +47,7 @@ public class MyNewGenerics<E> {
 	}
 	
 	/**
-	 * <p>Description:true·ºĞÍÎª¿Õ¡£false²»Îª¿Õ<p>
+	 * <p>Description:trueæ³›å‹ä¸ºç©ºã€‚falseä¸ä¸ºç©º<p>
 	 * @return size == 0
 	 */
 	public boolean isEmpty() {
@@ -55,7 +55,7 @@ public class MyNewGenerics<E> {
 	}
 	
 	/**
-	 * <p>ÔÚËùÓĞÔªËØºóÌí¼ÓÒ»¸öĞÂÔªËØ<p>
+	 * <p>åœ¨æ‰€æœ‰å…ƒç´ åæ·»åŠ ä¸€ä¸ªæ–°å…ƒç´ <p>
 	 * @param e
 	 */
 	public void addLast(E e) {
@@ -63,7 +63,7 @@ public class MyNewGenerics<E> {
 	}
 	
 	/**
-	 * <p>ÔÚËùÓĞÔªËØÇ°Ìí¼ÓÒ»¸öĞÂÔªËØ<p>
+	 * <p>åœ¨æ‰€æœ‰å…ƒç´ å‰æ·»åŠ ä¸€ä¸ªæ–°å…ƒç´ <p>
 	 * @param e
 	 */
 	public void addFirst(E e) {
@@ -71,7 +71,7 @@ public class MyNewGenerics<E> {
 	}
 	
 	/**
-	 * <p>°´ÓÃ»§ÊäÈëµÄË÷ÒıÌí¼ÓĞÂÔªËØ</p>
+	 * <p>æŒ‰ç”¨æˆ·è¾“å…¥çš„ç´¢å¼•æ·»åŠ æ–°å…ƒç´ </p>
 	 * @param index
 	 * @param e
 	 */
@@ -79,7 +79,7 @@ public class MyNewGenerics<E> {
 		
 		if(index < 0 || index > size) {throw new IllegalArgumentException("add failed, index < 0 || index > size");}
 		
-		if(size == data.length) {reGenerics(data.length * 2);}//À©Èİ¿Õ¼ä£¬´æ·Å¸ü¶àµÄÊı¾İ
+		if(size == data.length) {reGenerics(data.length * 2);}//ï¿½ï¿½ï¿½İ¿Õ¼ä£¬ï¿½ï¿½Å¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 		
 		for(int i = size - 1; i > index; i--) {data[i + 1] = data[i];}
 		
@@ -89,7 +89,7 @@ public class MyNewGenerics<E> {
 	
 
 	/**
-	 * <p>°´ÊäÈëµÄË÷ÒıµÃµ½·ºĞÍÖĞµÄÔªËØ</p>
+	 * <p>æŒ‰è¾“å…¥çš„ç´¢å¼•å¾—åˆ°æ³›å‹ä¸­çš„å…ƒç´ </p>
 	 * @param index
 	 * @return data[index]
 	 */
@@ -99,7 +99,7 @@ public class MyNewGenerics<E> {
 	}
 	
 	/**
-	 *<p>·µ»Ø·ºĞÍÊı×éÖĞµÚÒ»¸öÔªËØ</p>
+	 *<p>è¿”å›æ³›å‹æ•°ç»„ä¸­ç¬¬ä¸€ä¸ªå…ƒç´ </p>
 	 * @return
 	 */
 	public E getFirst() {
@@ -107,7 +107,7 @@ public class MyNewGenerics<E> {
 	}
 	
 	/**
-	 *<p>·µ»Ø·ºĞÍÊı×éÖĞ×îºó¸öÔªËØ</p>
+	 *<p>è¿”å›æ³›å‹æ•°ç»„ä¸­æœ€åä¸ªå…ƒç´ </p>
 	 * @return
 	 */
 	public E getLast() {
@@ -115,7 +115,7 @@ public class MyNewGenerics<E> {
 	}
 	
 	/**
-	 * <p>°´ÊäÈëµÄË÷ÒıĞŞ¸Ä·ºĞÍÖĞµÄÔªËØ</p>
+	 * <p>æŒ‰è¾“å…¥çš„ç´¢å¼•ä¿®æ”¹æ³›å‹ä¸­çš„å…ƒç´ </p>
 	 * @param index
 	 * @param e
 	 */
@@ -124,7 +124,7 @@ public class MyNewGenerics<E> {
 	}
 	
 	/**
-	 * <p>°´ÊäÈëµÄÊı×Ö²éÕÒ·ºĞÍÖĞÊÇ·ñÓĞ¸ÃÔªËØ,´æÔÚ·µ»Øtrue£¬²»´æÔÚ·µ»Øfalse</p>
+	 * <p>æŒ‰è¾“å…¥çš„æ•°å­—æŸ¥æ‰¾æ³›å‹ä¸­æ˜¯å¦æœ‰è¯¥å…ƒç´ ,å­˜åœ¨è¿”å›trueï¼Œä¸å­˜åœ¨è¿”å›false</p>
 	 * @param e
 	 * @return
 	 */
@@ -136,7 +136,7 @@ public class MyNewGenerics<E> {
 	}
 	
 	/**
-	 * <p>°´ÊäÈëµÄÊı×Ö²éÕÒ·ºĞÍÖĞÊÇ·ñÓĞ¸ÃÔªËØ£¬²¢·µ»ØË÷Òı£¬²»´æÔÚÔò·µ»Ø-1</p>
+	 * <p>æŒ‰è¾“å…¥çš„æ•°å­—æŸ¥æ‰¾æ³›å‹ä¸­æ˜¯å¦æœ‰è¯¥å…ƒç´ ï¼Œå¹¶è¿”å›ç´¢å¼•ï¼Œä¸å­˜åœ¨åˆ™è¿”å›-1</p>
 	 * @return
 	 */
 	public int find(E e) {
@@ -147,7 +147,7 @@ public class MyNewGenerics<E> {
 	}
 	
 	/**
-	 * <p>°´ÊäÈëË÷ÒıÉ¾³ıÔªËØ£¬É¾³ıºó·µ»ØÉ¾³ıÔªËØ</p>
+	 * <p>æŒ‰è¾“å…¥ç´¢å¼•åˆ é™¤å…ƒç´ ï¼Œåˆ é™¤åè¿”å›åˆ é™¤å…ƒç´ </p>
 	 * @return
 	 */
 	public E remove(int index) {
@@ -158,25 +158,25 @@ public class MyNewGenerics<E> {
 		}
 		size--;
 		
-		if(size == data.length / 4 && data.length / 2 != 0 ) {reGenerics(data.length / 2);}//Ëõ¼õÈİÁ¿£¬¼õÉÙÀË·Ñ
+		if(size == data.length / 4 && data.length / 2 != 0 ) {reGenerics(data.length / 2);}//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë·ï¿½
 		
 		return e;
 	}
 	
 	/**
-	 * <p>É¾³ıµÚÒ»¸öÔªËØ£¬²¢·µ»ØÉ¾³ıÔªËØ</p>
+	 * <p>åˆ é™¤ç¬¬ä¸€ä¸ªå…ƒç´ ï¼Œå¹¶è¿”å›åˆ é™¤å…ƒç´ </p>
 	 * @return
 	 */
 	public E removeFirst() {return remove(0);}
 	
 	/**
-	 * <p>É¾³ı×îºóÒ»¸öÔªËØ£¬²¢·µ»ØÉ¾³ıÔªËØ</p>
+	 * <p>åˆ é™¤æœ€åä¸€ä¸ªå…ƒç´ ï¼Œå¹¶è¿”å›åˆ é™¤å…ƒç´ </p>
 	 * @return
 	 */
 	public E removeLast() {return remove(size - 1);}
 	
 	/**
-	 * <p>¶ÔÊı×éÈİÁ¿½øĞĞĞŞ¸Ä</p>
+	 * <p>å¯¹æ•°ç»„å®¹é‡è¿›è¡Œä¿®æ”¹</p>
 	 */
 	private void reGenerics(int newCapacity) {
 		// TODO Auto-generated method stub

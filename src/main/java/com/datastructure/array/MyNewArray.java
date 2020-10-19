@@ -2,19 +2,19 @@ package com.datastructure.array;
 
 /**
  * 
- *<p>Title:×Ô¶¨ÒåµÄÊı×éÀà<p>	
- *<p>Description:½«ÊµÏÖ»ù±¾µÄÔöÉ¾²é¸ÄµÈ²Ù×÷<p>	
+ *<p>Title:è‡ªå®šä¹‰çš„æ•°ç»„ç±»<p>	
+ *<p>Description:å°†å®ç°åŸºæœ¬çš„å¢åˆ æŸ¥æ”¹ç­‰æ“ä½œ<p>	
  * @author Administrator
  * @version 2020-10-11
  *
  */
 public class MyNewArray {
 	private int[] data;
-	private int size;//Êı×éÖĞµ±Ç°ÔªËØÊıÁ¿
+	private int size;//æ•°ç»„ä¸­å½“å‰å…ƒç´ æ•°é‡
 	
 	/**
 	 * 
-	 * <p>Description:ÉèÖÃÒ»¸öÄ¬ÈÏµÄÊı×é´óĞ¡10<p>
+	 * <p>Description:è®¾ç½®ä¸€ä¸ªé»˜è®¤çš„æ•°ç»„å¤§å°10<p>
 	 */
 	public MyNewArray() {
 		this(10);
@@ -22,7 +22,7 @@ public class MyNewArray {
 	
 	/**
 	 * 
-	 * <p>Description:ÓÃ»§ÊäÈëµÄÊı×é´óĞ¡capacity<p>
+	 * <p>Description:ç”¨æˆ·è¾“å…¥çš„æ•°ç»„å¤§å°capacity<p>
 	 * @param capacity
 	 */
 	public MyNewArray(int capacity) {
@@ -31,7 +31,7 @@ public class MyNewArray {
 	}
 	
 	/**
-	 * <p>Description:·µ»ØÊı×éÖĞµ±Ç°ÔªËØ¸öÊı<p>
+	 * <p>Description:è¿”å›æ•°ç»„ä¸­å½“å‰å…ƒç´ ä¸ªæ•°<p>
 	 * @return size
 	 */
 	public int getSize() {
@@ -39,7 +39,7 @@ public class MyNewArray {
 	}
 	
 	/**
-	 * <p>Description:·µ»ØÊı×éµÄÈİÁ¿<p>
+	 * <p>Description:è¿”å›æ•°ç»„çš„å®¹é‡<p>
 	 * @return data.length
 	 */
 	public int getCapacity() {
@@ -47,7 +47,7 @@ public class MyNewArray {
 	}
 	
 	/**
-	 * <p>Description:trueÊı×éÎª¿Õ¡£false²»Îª¿Õ<p>
+	 * <p>Description:trueæ•°ç»„ä¸ºç©ºã€‚falseä¸ä¸ºç©º<p>
 	 * @return size == 0
 	 */
 	public boolean isEmpty() {
@@ -55,7 +55,7 @@ public class MyNewArray {
 	}
 	
 	/**
-	 * <p>ÔÚËùÓĞÔªËØºóÌí¼ÓÒ»¸öĞÂÔªËØ<p>
+	 * <p>åœ¨æ‰€æœ‰å…ƒç´ åæ·»åŠ ä¸€ä¸ªæ–°å…ƒç´ <p>
 	 * @param e
 	 */
 	public void addLast(int e) {
@@ -63,7 +63,7 @@ public class MyNewArray {
 	}
 	
 	/**
-	 * <p>ÔÚËùÓĞÔªËØÇ°Ìí¼ÓÒ»¸öĞÂÔªËØ<p>
+	 * <p>åœ¨æ‰€æœ‰å…ƒç´ å‰æ·»åŠ ä¸€ä¸ªæ–°å…ƒç´ <p>
 	 * @param e
 	 */
 	public void addFirst(int e) {
@@ -71,7 +71,7 @@ public class MyNewArray {
 	}
 	
 	/**
-	 * <p>°´ÓÃ»§ÊäÈëµÄË÷ÒıÌí¼ÓĞÂÔªËØ</p>
+	 * <p>æŒ‰ç”¨æˆ·è¾“å…¥çš„ç´¢å¼•æ·»åŠ æ–°å…ƒç´ </p>
 	 * @param index
 	 * @param e
 	 */
@@ -88,7 +88,7 @@ public class MyNewArray {
 	}
 	
 	/**
-	 * <p>°´ÊäÈëµÄË÷ÒıµÃµ½Êı×éÖĞµÄÔªËØ</p>
+	 * <p>æŒ‰è¾“å…¥çš„ç´¢å¼•å¾—åˆ°æ•°ç»„ä¸­çš„å…ƒç´ </p>
 	 * @param index
 	 * @return data[index]
 	 */
@@ -98,7 +98,7 @@ public class MyNewArray {
 	}
 	
 	/**
-	 * <p>°´ÊäÈëµÄË÷ÒıĞŞ¸ÄÊı×éÖĞµÄÔªËØ</p>
+	 * <p>æŒ‰è¾“å…¥çš„ç´¢å¼•ä¿®æ”¹æ•°ç»„ä¸­çš„å…ƒç´ </p>
 	 * @param index
 	 * @param e
 	 */
@@ -107,7 +107,7 @@ public class MyNewArray {
 	}
 	
 	/**
-	 * <p>°´ÊäÈëµÄÊı×Ö²éÕÒÊı×éÖĞÊÇ·ñÓĞ¸ÃÔªËØ,´æÔÚ·µ»Øtrue£¬²»´æÔÚ·µ»Øfalse</p>
+	 * <p>æŒ‰è¾“å…¥çš„æ•°å­—æŸ¥æ‰¾æ•°ç»„ä¸­æ˜¯å¦æœ‰è¯¥å…ƒç´ ,å­˜åœ¨è¿”å›trueï¼Œä¸å­˜åœ¨è¿”å›false</p>
 	 * @param e
 	 * @return
 	 */
@@ -119,7 +119,7 @@ public class MyNewArray {
 	}
 	
 	/**
-	 * <p>°´ÊäÈëµÄÊı×Ö²éÕÒÊı×éÖĞÊÇ·ñÓĞ¸ÃÔªËØ£¬²¢·µ»ØË÷Òı£¬²»´æÔÚÔò·µ»Ø-1</p>
+	 * <p>æŒ‰è¾“å…¥çš„æ•°å­—æŸ¥æ‰¾æ•°ç»„ä¸­æ˜¯å¦æœ‰è¯¥å…ƒç´ ï¼Œå¹¶è¿”å›ç´¢å¼•ï¼Œä¸å­˜åœ¨åˆ™è¿”å›-1</p>
 	 * @return
 	 */
 	public int find(int e) {
@@ -130,7 +130,7 @@ public class MyNewArray {
 	}
 	
 	/**
-	 * <p>°´ÊäÈëË÷ÒıÉ¾³ıÔªËØ£¬É¾³ıºó·µ»ØÉ¾³ıÔªËØ</p>
+	 * <p>æŒ‰è¾“å…¥ç´¢å¼•åˆ é™¤å…ƒç´ ï¼Œåˆ é™¤åè¿”å›åˆ é™¤å…ƒç´ </p>
 	 * @return
 	 */
 	public int remove(int index) {
@@ -144,13 +144,13 @@ public class MyNewArray {
 	}
 	
 	/**
-	 * <p>É¾³ıµÚÒ»¸öÔªËØ£¬²¢·µ»ØÉ¾³ıÔªËØ</p>
+	 * <p>åˆ é™¤ç¬¬ä¸€ä¸ªå…ƒç´ ï¼Œå¹¶è¿”å›åˆ é™¤å…ƒç´ </p>
 	 * @return
 	 */
 	public int removeFirst() {return remove(0);}
 	
 	/**
-	 * <p>É¾³ı×îºóÒ»¸öÔªËØ£¬²¢·µ»ØÉ¾³ıÔªËØ</p>
+	 * <p>åˆ é™¤æœ€åä¸€ä¸ªå…ƒç´ ï¼Œå¹¶è¿”å›åˆ é™¤å…ƒç´ </p>
 	 * @return
 	 */
 	public int removeLast() {return remove(size - 1);}

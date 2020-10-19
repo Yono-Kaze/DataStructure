@@ -2,7 +2,7 @@ package com.datastructure.linkedlist;
 
 /**
  * 
- *<p>Description:×Ô¶¨ÒåÁ´±í<p>	
+ *<p>Description:æ•°æ®ç»“æ„-é“¾è¡¨éƒ¨åˆ†<p>	
  * @author Administrator
  * @version 2020-10-17
  *
@@ -35,8 +35,8 @@ public class MyLinkedList<E> {
 
 	}
 
-	private int size;//Á´±íÖĞÔªËØ¸öÊı
-	private Node dummyHead;//ĞéÄâÍ·½áµã
+	private int size;//é“¾è¡¨ä¸­å…ƒç´ 
+	private Node dummyHead;//è™šæ‹Ÿå¤´ç»“ç‚¹
 
 	public MyLinkedList() {
 		dummyHead = new Node(null,null);
@@ -44,7 +44,7 @@ public class MyLinkedList<E> {
 	}
 
 	/**
-	 * <p>·µ»ØÁ´±íÖĞÔªËØ¸öÊı<p>
+	 * <p>è¿”å›é“¾è¡¨å…ƒç´ ä¸ªæ•°<p>
 	 * @return 
 	 */
 	public int getSize() {
@@ -52,7 +52,7 @@ public class MyLinkedList<E> {
 	}
 
 	/**
-	 * <p>Á´±íÎª¿Õ·µ»Øtrue£¬·ñÔò·µ»Øfalse<p>
+	 * <p>åˆ¤æ–­æ˜¯å¦ä¸ºç©ºï¼Œç©ºè¿”å›trueï¼Œå¦åˆ™false<p>
 	 * @return
 	 */
 	public boolean isEmpty() {
@@ -60,7 +60,7 @@ public class MyLinkedList<E> {
 	}
 
 	/**
-	 * <p>ÏòÁ´±íÍ·ÖĞÌí¼ÓÒ»¸öÔªËØ<p>
+	 * <p>å‘é“¾è¡¨å¤´ä½ç½®æ·»åŠ å…ƒç´ <p>
 	 */
 	public void addFirst(E e) {
 		//		Node node = new Node(e);
@@ -71,7 +71,7 @@ public class MyLinkedList<E> {
 	}
 
 	/**
-	 * <p>ÔÚÌØ¶¨index£¨ÒÔ0¿ªÊ¼£©Î»ÖÃÌí¼ÓÔªËØe<p>
+	 * <p>æŒ‰ç”¨æˆ·è¾“å…¥ä½ç½®æ·»åŠ å…ƒç´ ï¼Œä»¥0ä¸ºå¼€å§‹<p>
 	 * @param index
 	 * @param e
 	 */
@@ -93,7 +93,7 @@ public class MyLinkedList<E> {
 	}
 	
 	/**
-	 * <p>ÔÚÁ´±íÎ²²¿Ìí¼ÓÒ»¸öÔªËØ<p>
+	 * <p>åœ¨é“¾è¡¨å°¾æ·»åŠ å…ƒç´ <p>
 	 */
 	public void addLast(E e) {
 		add(size, e);

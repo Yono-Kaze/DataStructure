@@ -2,36 +2,37 @@ package com.datastructure.stackandqueue;
 
 /**
  * 
- *<p>Title:·ºĞÍÕ»µÄ½Ó¿Ú<p>	
- *<p>Description:×Ô¶¨Òå·ºĞÍÕ»µÄ½Ó¿Ú²¿·Ö<p>	
+ *<p>Title:æ³›å‹æ ˆçš„æ¥å£<p>	
+ *<p>Description:è‡ªå®šä¹‰æ³›å‹æ ˆçš„æ¥å£éƒ¨åˆ†<p>	
  * @author Administrator
  * @version 2020-10-13
  *
  */
 public interface InterfaceStack<E> {
 	
+	
 	/**
-	 * <p>Description:ÈëÕ»<p>	
+	 * <p>Description:å…¥æ ˆ<p>	
 	 */
 	void push(E e);
 
 	/**
-	 * <p>Description:³öÕ»<p>	
+	 * <p>Description:å‡ºæ ˆ<p>	
 	 */
 	E pop();
 
 	/**
-	 * <p>Description:²é¿´Õ»¶¥ÔªËØ<p>	
+	 * <p>Description:æŸ¥çœ‹æ ˆé¡¶å…ƒç´ <p>	
 	 */
 	E peek();
 
 	/**.
-	 * <p>Description:²é¿´Õ»ÊÇ·ñÎª¿Õ<p>	
+	 * <p>Description:æŸ¥çœ‹æ ˆæ˜¯å¦ä¸ºç©º<p>	
 	 */
 	boolean isEmpty();
 
 	/**
-	 * <p>Description:²é¿´Õ»ÔªËØÊıÁ¿<p>	
+	 * <p>Description:æŸ¥çœ‹æ ˆå…ƒç´ æ•°é‡<p>	
 	 */
 	int getSize();
 	

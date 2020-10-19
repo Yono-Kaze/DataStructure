@@ -4,8 +4,8 @@ import com.datastructure.stackandqueue.InterfaceQueue;
 
 /**
  * 
- *<p>Title:Ñ­»·¶ÓÁĞµÄÊµÏÖ<p>	
- *<p>Description:Òò²Ù×÷ÓëÊı×éÓĞËù²îÒì£¬ĞèÒª´Óµ×²¿ÖØĞÂÀ´ÊµÏÖÑ­»·¶ÓÁĞ<p>	
+ *<p>Title:å¾ªç¯é˜Ÿåˆ—çš„å®ç°<p>	
+ *<p>Description:å› æ“ä½œä¸æ•°ç»„æœ‰æ‰€å·®å¼‚ï¼Œéœ€è¦ä»åº•éƒ¨é‡æ–°æ¥å®ç°å¾ªç¯é˜Ÿåˆ—<p>	
  * @author Administrator
  * @version 2020-10-14
  *
@@ -15,10 +15,10 @@ public class MyArrayLoopQueue<E> implements InterfaceQueue<E> {
 
 	private E[] data;
 	private int front,tail;
-	private int size;//Êı×éÖĞÔªËØ¸öÊı
+	private int size;//æ•°ç»„ä¸­å…ƒç´ ä¸ªæ•°
 
 	/**
-	 * <p>ÉèÖÃ³õÊ¼´óĞ¡Îª10<p>
+	 * <p>è®¾ç½®åˆå§‹å¤§å°ä¸º10<p>
 	 */
 	public MyArrayLoopQueue() {
 		// TODO Auto-generated constructor stub
@@ -26,7 +26,7 @@ public class MyArrayLoopQueue<E> implements InterfaceQueue<E> {
 	}
 
 	/**
-	 * <p>¸ù¾İÓÃ»§ÊäÈë´óĞ¡´´½¨Ñ­»·¶ÓÁĞ<p>
+	 * <p>æ ¹æ®ç”¨æˆ·è¾“å…¥å¤§å°åˆ›å»ºå¾ªç¯é˜Ÿåˆ—<p>
 	 * @param capacity
 	 */
 	public MyArrayLoopQueue(int capacity) {
@@ -37,7 +37,7 @@ public class MyArrayLoopQueue<E> implements InterfaceQueue<E> {
 	}
 	
 	/**
-	 *<p>·µ»ØÑ­»·¶ÓÁĞ×ÜÈİÁ¿<p>
+	 *<p>è¿”å›å¾ªç¯é˜Ÿåˆ—æ€»å®¹é‡<p>
 	 * @return 
 	 */
 	public int getCapacity() {
@@ -45,7 +45,7 @@ public class MyArrayLoopQueue<E> implements InterfaceQueue<E> {
 	}
 
 	/**
-	 * <p>·µ»ØÑ­»·¶ÓÁĞÔªËØÊıÁ¿<p>
+	 * <p>è¿”å›å¾ªç¯é˜Ÿåˆ—å…ƒç´ æ•°é‡<p>
 	 * @return size
 	 */
 	@Override
@@ -55,7 +55,7 @@ public class MyArrayLoopQueue<E> implements InterfaceQueue<E> {
 	}
 
 	/**
-	 * <p>Ñ­»·¶ÓÁĞÎª¿Õ·µ»Øtrue£¬·ñÔò·µ»Øfalse<p>
+	 * <p>å¾ªç¯é˜Ÿåˆ—ä¸ºç©ºè¿”å›trueï¼Œå¦åˆ™è¿”å›false<p>
 	 */
 	@Override
 	public boolean isEmpty() {
@@ -64,7 +64,7 @@ public class MyArrayLoopQueue<E> implements InterfaceQueue<E> {
 	}
 	
 	/**
-	 * <p>ÔªËØ´Ó¶ÓÎ²Èë¶Ó<p>
+	 * <p>å…ƒç´ ä»é˜Ÿå°¾å…¥é˜Ÿ<p>
 	 */
 	@Override
 	public void enqueue(E e) {
@@ -77,7 +77,7 @@ public class MyArrayLoopQueue<E> implements InterfaceQueue<E> {
 	}
 
 	/**
-	 * <p>À©³äÈİÁ¿<p>
+	 * <p>æ‰©å……å®¹é‡<p>
 	 * @param i
 	 */
 	private void reCapacity(int capacity) {
@@ -92,7 +92,7 @@ public class MyArrayLoopQueue<E> implements InterfaceQueue<E> {
 	}
 
 	/**
-	 * <p>¶ÓÊ×ÔªËØ³ö¶Ó,²¢·µ»Ø³ö¶ÓÔªËØ<p>
+	 * <p>é˜Ÿé¦–å…ƒç´ å‡ºé˜Ÿ,å¹¶è¿”å›å‡ºé˜Ÿå…ƒç´ <p>
 	 * @return e
 	 */
 	@Override

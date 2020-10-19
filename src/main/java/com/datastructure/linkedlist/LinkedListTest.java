@@ -2,7 +2,7 @@ package com.datastructure.linkedlist;
 
 /**
  * 
- *<p>Description:链表部分相关测试<p>	
+ *<p>Description:鏁版嵁缁撴瀯-閾捐〃鎺ュ彛<p>	
  * @author Administrator
  * @version 2020-10-17
  *

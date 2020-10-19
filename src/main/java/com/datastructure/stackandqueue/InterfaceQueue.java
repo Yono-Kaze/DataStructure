@@ -2,8 +2,8 @@ package com.datastructure.stackandqueue;
 
 /**
  * 
- *<p>Title:╤сап╣д╫с©з<p>	
- *<p>Description:вт╤╗рЕ╤сап╣д╫с©з╡©╥ж<p>	
+ *<p>Title:И≤÷Е┬≈Г └Ф▌╔Е▐ё<p>	
+ *<p>Description:Х┤╙Е╝ Д╧┴И≤÷Е┬≈Г └Ф▌╔Е▐ёИ┐╗Е┬├<p>	
  * @author Administrator
  * @version 2020-10-14
  *

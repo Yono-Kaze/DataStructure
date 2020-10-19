@@ -5,8 +5,8 @@ import com.datastructure.stackandqueue.InterfaceQueue;
 
 /**
  * 
- *<p>Title:×Ô¶¨Òå¶ÓÁĞ<p>	
- *<p>Description:ÒÔ¶¯Ì¬Êı×éÎª»ù´¡¶¨Òå¶¯Ì¬¶ÓÁĞ<p>	
+ *<p>Title:è‡ªå®šä¹‰é˜Ÿåˆ—<p>	
+ *<p>Description:ä»¥åŠ¨æ€æ•°ç»„ä¸ºåŸºç¡€å®šä¹‰åŠ¨æ€é˜Ÿåˆ—<p>	
  * @author Administrator
  * @version 2020-10-14
  * @param <E>
@@ -16,7 +16,7 @@ public class MyArrayQueue<E> implements InterfaceQueue<E> {
 	private MyNewGenerics<E> queue;
 	
 	/**
-	 * <p>ÉèÖÃÄ¬ÈÏ¶ÓÁĞ´óĞ¡Îª10<p>
+	 * <p>è®¾ç½®é»˜è®¤é˜Ÿåˆ—å¤§å°ä¸º10<p>
 	 */
 	public MyArrayQueue() {
 		// TODO Auto-generated constructor stub
@@ -24,7 +24,7 @@ public class MyArrayQueue<E> implements InterfaceQueue<E> {
 	}
 	
 	/**
-	 * <p>¸ù¾İÓÃ»§ÊäÈë´óĞ¡´´½¨¶ÓÁĞ<p>
+	 * <p>æ ¹æ®ç”¨æˆ·è¾“å…¥å¤§å°åˆ›å»ºé˜Ÿåˆ—<p>
 	 * @param capacity
 	 */
 	public MyArrayQueue(int capacity) {
@@ -32,7 +32,7 @@ public class MyArrayQueue<E> implements InterfaceQueue<E> {
 	}
 	
 	/**
-	 * <p>·µ»Ø¶ÓÁĞ×ÜÈİÁ¿<p>
+	 * <p>è¿”å›é˜Ÿåˆ—æ€»å®¹é‡<p>
 	 * @return
 	 */
 	public int getCapacity() {
@@ -41,7 +41,7 @@ public class MyArrayQueue<E> implements InterfaceQueue<E> {
 	}
 
 	/**
-	 * <p>´Ó¶ÓÎ²½«ÊäÈëÔªËØÈëÕ»<p>
+	 * <p>ä»é˜Ÿå°¾å°†è¾“å…¥å…ƒç´ å…¥æ ˆ<p>
 	 */
 	@Override
 	public void enqueue(E e) {
@@ -50,7 +50,7 @@ public class MyArrayQueue<E> implements InterfaceQueue<E> {
 	}
 
 	/**
-	 * <p>½«¶ÓÊ×ÔªËØ³öÕ»£¬·µ»Ø³öÕ»ÔªËØ<p>
+	 * <p>å°†é˜Ÿé¦–å…ƒç´ å‡ºæ ˆï¼Œè¿”å›å‡ºæ ˆå…ƒç´ <p>
 	 * @return 
 	 */
 	@Override
@@ -60,7 +60,7 @@ public class MyArrayQueue<E> implements InterfaceQueue<E> {
 	}
 
 	/**
-	 * <p>²é¿´¶ÓÊ×ÔªËØ<p>
+	 * <p>æŸ¥çœ‹é˜Ÿé¦–å…ƒç´ <p>
 	 * @return
 	 */
 	@Override
@@ -70,7 +70,7 @@ public class MyArrayQueue<E> implements InterfaceQueue<E> {
 	}
 	
 	/**
-	 * <p>·µ»Ø¶ÓÁĞÔªËØÊıÁ¿<p>
+	 * <p>è¿”å›é˜Ÿåˆ—å…ƒç´ æ•°é‡<p>
 	 * @return
 	 */
 	@Override
@@ -80,7 +80,7 @@ public class MyArrayQueue<E> implements InterfaceQueue<E> {
 	}
 
 	/**
-	 * <p>Èô¶ÓÁĞÎª¿Õ·µ»Øtrue·ñÔò·µ»Øfalse<p>
+	 * <p>è‹¥é˜Ÿåˆ—ä¸ºç©ºè¿”å›trueå¦åˆ™è¿”å›false<p>
 	 * @return
 	 */
 	@Override

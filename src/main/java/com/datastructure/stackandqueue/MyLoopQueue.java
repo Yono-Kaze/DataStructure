@@ -2,10 +2,11 @@ package com.datastructure.stackandqueue;
 
 import com.datastructure.stackandqueue.impl.MyArrayLoopQueue;
 
+
 /**
  * 
- *<p>Title:循环队列<p>	
- *<p>Description:循环队列相关测试<p>	
+ *<p>Title:寰幆闃熷垪<p>	
+ *<p>Description:寰幆闃熷垪鐩稿叧娴嬭瘯<p>	
  * @author Administrator
  * @version 2020-10-14
  *

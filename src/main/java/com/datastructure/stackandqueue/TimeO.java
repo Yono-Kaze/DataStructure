@@ -9,8 +9,8 @@ import com.datastructure.stackandqueue.impl.MyArrayQueue;
 
 /**
  * 
- *<p>Title:¸´ÔÓ¶È·ÖÎö<p>	
- *<p>Description:¶ÓÁĞºÍÑ­»·¶ÓÁĞµÄÊ±¼ä¶Ô±È<p>	
+ *<p>Title:å¤æ‚åº¦åˆ†æ<p>	
+ *<p>Description:é˜Ÿåˆ—å’Œå¾ªç¯é˜Ÿåˆ—çš„æ—¶é—´å¯¹æ¯”<p>	
  * @author Administrator
  * @version 2020-10-14
  *

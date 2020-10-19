@@ -2,8 +2,8 @@ package com.datastructure.array;
 
 /**
  * 
- *<p>Title:���ݽṹ-���Ͳ���<p>	
- *<p>Description:���Ͳ�����ز���<p>	
+ *<p>Title:数据结构-泛型部分<p>	
+ *<p>Description:泛型部分相关测试<p>	
  * @author Administrator
  * @version 2020-10-11
  *
@@ -12,8 +12,8 @@ public class MyGenerics {
 	
 	/**
 	 * 
-	 *<p>Title:ѧ����<p>	
-	 *<p>Description:����������id��name��ismale<p>	
+	 *<p>Title:学生类<p>	
+	 *<p>Description:基本属性有id，name，ismale<p>	
 	 * @author Administrator
 	 * @version 2020-10-11
 	 *
@@ -68,7 +68,7 @@ public class MyGenerics {
 		Student student = new Student(2, "20", true);
 		System.out.println(student);
 		
-		MyNewGenerics<Student> student1 = new MyNewGenerics<Mygenerics.Student>();
+		MyNewGenerics<Student> student1 = new MyNewGenerics<MyGenerics.Student>();
 		
 		for(int i = 0; i < 6; i++) {
 			student1.addLast(new Student(i, toString(i), (Math.random() < 0.5 ? true :false)));
