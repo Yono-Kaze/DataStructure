@@ -11,7 +11,7 @@ import com.datastructure.unit.Student;
  * @version 2020-10-13
  *
  */
-public class MyStack {
+public class MyStackTest {
 	
 	public static void main(String[] args) {
 		
