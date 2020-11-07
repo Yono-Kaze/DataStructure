@@ -125,7 +125,7 @@ public class MyLinkedList<E> {
 	public E getLast() {
 		return get(size - 1);
 	}
-	
+
 	/**
 	 * 更改链表中第index个位置的元素，以0为基础
 	 * @param index
@@ -138,7 +138,7 @@ public class MyLinkedList<E> {
 		for(int i = 0; i < index; i++) {cur = cur.next;}
 		cur.e = e;
 	}
-	
+
 	/**
 	 * 查找链表中是否有元素e,存在返回true，否则返回false
 	 * @param e
@@ -152,25 +152,47 @@ public class MyLinkedList<E> {
 		}
 		return false;
 	}
-	
+
 	/**
 	 * 删除链表中第index位置的元素，返回删除元素
 	 * @return
 	 */
 	public E remove(int index) {
 		if(index < 0 || index > size) {throw new IllegalArgumentException("addIndex failed,index < 0 || index > size");}
-		
+
 		Node prev = dummyHead;
 		for(int i = 0; i < index; i++) {prev =prev.next;}
-		
+
 		Node detNode = prev.next;
 		prev.next = detNode.next;
 		detNode.next = null;
 		size--;
-		
+
 		return detNode.e;
 	}
-	
+
+	/**
+	 * 删除元素e
+	 * @param e
+	 */
+	public void removeElement(E e) {
+		Node prev = dummyHead;
+		
+		while(prev.next != null) {
+			if(prev.next.e.equals(e)) {
+				break;
+			}
+			prev = prev.next;
+		}
+		
+		if(prev.next != null) {
+			Node delNode = prev.next;
+			prev.next = delNode.next;
+			delNode.next = null;
+		}
+	}
+
+
 	/**
 	 * 删除链表第一个元素
 	 * @return
@@ -178,7 +200,7 @@ public class MyLinkedList<E> {
 	public E removeFirst() {
 		return remove(0);
 	}
-	
+
 	/**
 	 * 删除链表最后一个元素
 	 * @return
@@ -187,9 +209,10 @@ public class MyLinkedList<E> {
 		return remove(size - 1);
 	}
 
+
 	@Override
 	public String toString() {
-		
+
 		StringBuffer res = new StringBuffer();
 		Node cur = dummyHead.next;
 		while(cur != null) {
@@ -199,7 +222,5 @@ public class MyLinkedList<E> {
 		res.append("NULL");
 		return res.toString();
 	}
-	
-	
-	
+
 }

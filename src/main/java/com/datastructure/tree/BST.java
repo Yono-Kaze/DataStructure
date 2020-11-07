@@ -424,6 +424,10 @@ public class BST<E extends Comparable<E>> {
 	 */
 	public static void main(String[] args) {
 		BST<Integer> bst = new BST<Integer>();
+		bst.add(2);
+		bst.add(4);
+		bst.add(2);
+		System.out.println(bst);
 //		int[] nums = {5,3,6,8,4,2};
 //		for(int num:nums) {
 //			bst.add(num);
@@ -440,26 +444,26 @@ public class BST<E extends Comparable<E>> {
 //		System.out.println(bst);
 //		System.out.println("---------层序遍历------------");
 //		bst.levelOrder();
-		Random random = new Random();
-		int n = 1000;
-		
-		for(int i = 0; i < n; i++) {
-			bst.add(random.nextInt(1000));
-		}
-		
-		ArrayList<Integer> nums = new ArrayList<Integer>();
-		while(!bst.isEmpty()) {
-			nums.add(bst.removeMin());
-		}
-		
-		System.out.println(nums);
-		
-		for (int i = 1; i < nums.size(); i++) {
-			if(nums.get(i - 1) > nums.get(i)) {
-				throw new IllegalArgumentException("Error");
-			}
-		}
-		System.out.println("removeMin test comppleted");
+//		Random random = new Random();
+//		int n = 1000;
+//		
+//		for(int i = 0; i < n; i++) {
+//			bst.add(random.nextInt(1000));
+//		}
+//		
+//		ArrayList<Integer> nums = new ArrayList<Integer>();
+//		while(!bst.isEmpty()) {
+//			nums.add(bst.removeMin());
+//		}
+//		
+//		System.out.println(nums);
+//		
+//		for (int i = 1; i < nums.size(); i++) {
+//			if(nums.get(i - 1) > nums.get(i)) {
+//				throw new IllegalArgumentException("Error");
+//			}
+//		}
+//		System.out.println("removeMin test comppleted");
 	}
 	
 
