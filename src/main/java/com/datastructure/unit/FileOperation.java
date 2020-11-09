@@ -40,7 +40,6 @@ public class FileOperation {
 			String is = FileOperation.class.getClass().getResource("/" + fileName)
 					.getFile().toString();
 			File file = new File(is);
-			System.out.println(file.toString());
 			if(file.exists()) {
 				FileInputStream fis = new FileInputStream(file);
 				scanner = new Scanner(new BufferedInputStream(fis), "UTF8");

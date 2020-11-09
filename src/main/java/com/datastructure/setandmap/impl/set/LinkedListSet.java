@@ -1,4 +1,4 @@
-package com.datastructure.setandmap.impl;
+package com.datastructure.setandmap.impl.set;
 
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
