@@ -1,11 +1,10 @@
-package com.datastructure.setandmap;
+package com.datastructure.setandmap.impl.set;
 
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.Iterator;
 
-import com.datastructure.setandmap.impl.set.BSTSet;
-import com.datastructure.setandmap.impl.set.LinkedListSet;
+import com.datastructure.setandmap.Set;
 import com.datastructure.unit.FileOperation;
 
 /**
