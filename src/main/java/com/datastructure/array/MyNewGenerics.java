@@ -20,6 +20,14 @@ public class MyNewGenerics<E> {
 		this(10);
 	}
 	
+	public MyNewGenerics(E[] arr) {
+		data = (E[]) new Object[arr.length];
+		for (int i = 0; i < arr.length; i++) {
+			data[i] = arr[i];	
+		}
+		size = arr.length;
+	}
+	
 	/**
 	 * 
 	 * <p>Description:用户输入的泛型大小capacity<p>
@@ -153,7 +161,7 @@ public class MyNewGenerics<E> {
 	public E remove(int index) {
 		if(index < 0 || index > size) {throw new IllegalArgumentException("remove failed,index < 0 || index > size");}
 		E e = data[index];
-		for(int i = index; i < size; i++) {
+		for(int i = index; i < size - 1 ; i++) {
 			data[i] = data[i + 1];
 		}
 		size--;
@@ -188,6 +196,15 @@ public class MyNewGenerics<E> {
 		}
 		
 		data = newData;
+	}
+	
+	public void swap(int i, int j) {
+		if(i < 0 || i >= size || j < 0 || j >= size) {
+			throw new IllegalArgumentException("Index is IllegalArgument");
+		}
+		E t = data[i];
+		data[i] = data[j];
+		data[j] = t;
 	}
 	
 	@Override
