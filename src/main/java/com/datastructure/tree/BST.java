@@ -111,12 +111,11 @@ public class BST<E extends Comparable<E>> {
 		if(e.compareTo(node.e) == 0) {
 			return true;
 		}else if(e.compareTo(node.e) < 0) {
-			contains(node.left, e);
+			return contains(node.left, e);
 		}else {
-			contains(node.right, e);
+			return contains(node.right, e);
 		}
 
-		return contains(root, e);
 	}
 
 	/**
