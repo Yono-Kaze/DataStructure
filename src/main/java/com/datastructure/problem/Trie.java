@@ -1,10 +1,11 @@
-package com.datastructure.trie;
+package com.datastructure.problem;
 
 import java.util.TreeMap;
 
+
 /**
- * 
- *<p>Description:Trie(底层为TreeMap)<p>	
+ * 208. Implement Trie (Prefix Tree)
+ *<p>Description:<p>	
  * @author Administrator
  * @version 2020-11-19
  *
@@ -46,7 +47,7 @@ public class Trie {
 	 * 添加一个单词word
 	 * @param word
 	 */
-	public void add(String word) {
+	public void insert(String word) {
 
 		Node cur = root;
 
@@ -63,15 +64,15 @@ public class Trie {
 			size++;
 		}
 	}
-	
+
 	/**
 	 * 查询word是否在Trie中
 	 * @return
 	 */
-	public boolean contains(String word) {
-		
+	public boolean search(String word) {
+
 		Node cur = root;
-		
+
 		for (int i = 0; i < word.length(); i++) {
 			char c = word.charAt(i);
 			if (cur.next.get(c) == null) {
@@ -81,26 +82,27 @@ public class Trie {
 		}
 		return cur.isWord;
 	}
-	
+
 	/**
 	 * 查询是否在Trie中有单词以prefix为前缀
 	 * @param prefix
 	 * @return
 	 */
-	public boolean isPrefix(String prefix) {
-		
+	public boolean startsWith(String prefix) {
+
 		Node cur = root;
-		
+
 		for (int i = 0; i < prefix.length(); i++) {
 			char c = prefix.charAt(i);
 			if (cur.next.get(c) == null) {
 				return false;
 			}
-			
+
 			cur = cur.next.get(c);
 		}
-		
+
 		return true;
 	}
+
 
 }

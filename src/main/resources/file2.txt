@@ -457,6 +457,26 @@ The environments element defines how the environment is configured.
   </environment>
 </environments>
 Notice the key sections here:
+This is a code generator for MyBatis.
+
+This library will generate code for use with MyBatis. It will introspect a database table (or many tables) and will generate artifacts that can be used to access the table(s). This lessens the initial nuisance of setting up objects and configuration files to interact with database tables. MBG seeks to make a major impact on the large percentage of database operations that are simple CRUD (Create, Retrieve, Update, Delete).
+
+MBG can generate code in multiple styles (or "runtimes"). MBG can generate code for Java based projects, or for Kotlin based projects is is.
+This is a code generator for MyBatis.
+
+This library will generate code for use with MyBatis. It will introspect a database table (or many tables) and will generate artifacts that can be used to access the table(s). This lessens the initial nuisance of setting up objects and configuration files to interact with database tables. MBG seeks to make a major impact on the large percentage of database operations that are simple CRUD (Create, Retrieve, Update, Delete).
+
+MBG can generate code in multiple styles (or "runtimes"). MBG can generate code for Java based projects, or for Kotlin based projects is is.
+This is a code generator for MyBatis.
+
+This library will generate code for use with MyBatis. It will introspect a database table (or many tables) and will generate artifacts that can be used to access the table(s). This lessens the initial nuisance of setting up objects and configuration files to interact with database tables. MBG seeks to make a major impact on the large percentage of database operations that are simple CRUD (Create, Retrieve, Update, Delete).
+
+MBG can generate code in multiple styles (or "runtimes"). MBG can generate code for Java based projects, or for Kotlin based projects is is.
+This is a code generator for MyBatis.
+
+This library will generate code for use with MyBatis. It will introspect a database table (or many tables) and will generate artifacts that can be used to access the table(s). This lessens the initial nuisance of setting up objects and configuration files to interact with database tables. MBG seeks to make a major impact on the large percentage of database operations that are simple CRUD (Create, Retrieve, Update, Delete).
+
+MBG can generate code in multiple styles (or "runtimes"). MBG can generate code for Java based projects, or for Kotlin based projects is is.
 
 The default Environment ID (e.g. default="development").
 The Environment ID for each environment defined (e.g. id="development").
